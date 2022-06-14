@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+#tato {
+  position: absolute;
+  top: 0px;
+} 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  overflow-x: hidden;
+  transition: 0.5s;
+  animation: animated-gradient 2s linear infinite;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #333333;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  background: url(bg.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-header{
+  background: #2c3a47;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-flex;
+  padding: 8px;
+  background: linear-gradient(130deg, #ff2442, #1f67ff);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: auto;
+}
+
+.name{
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #e66767;
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+}
+
+.sm a:hover{
+  color: #e66767;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #e66767;
+  border: 2px solid #e66767;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background: #e66767;
+  color: #f2f2f2;
+}
+
+.card-footer{
+  background: #f4f4f4;
+  padding: 60px 10px;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #e66767;
+}
+
+.item span{
+  display: block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+
+.border{
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">New Products</a>
+  <a href="#">More Products</a>
+  <a href="#">YouTube</a>
+  <a href="#">Instagram</a>
+</div>
+<div id="tato" >
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+  <div class="profile-card">
+    <div class="card-header">
+      <div class="pic"><img src="https://i.postimg.cc/j58fJSYp/Pics-Art-06-14-10-48-15.png" alt="logo" height="300" width="300" /> 
+      </div>
+      <div id="container"><a id="colorlib-logo"><h1 style="color: white">Only_Gadgetz</h1><img src="https://i.postimg.cc/pLFNt3B1/Pics-Art-06-10-03-05-55.png" alt="logo" height="30" width="30" /></a><style>#colorlib-logo { display: inline-flex !important; align-items: center; justify-content: center; } #colorlib-logo h1 { font-size: clamp(2.2rem, 4vw, 4.8rem); margin: 0 0.5rem 0 0; }</style></div>      <div class="desc">#3 in beauty</div>
+      
+<div class="sm">
+<!--<img src="https://s3.amazonaws.com/fonts.zumba.media/images/zumba/_2022/2022-B1-Complementary/60-off-hero.gif" alt="logo" height="100" width="100" />-->
+        <!--<a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-youtube"></a>-->
+      </div>
+      <a href="https://www.amazon.in/dp/B099JK83D2/ref=as_sl_pc_as_ss_li_til?tag=haampro-21&linkCode=w00&linkId=dbabf1547e636c973f7e0cb789b5cc1f&creativeASIN=B099JK83D2" class="contact-btn">Buy Now!</a>
+    </div>
+    <div class="card-footer">
+      <div class="numbers">
+        <div class="item">
+          <span>4.6/5</span>
+          Rating
+        </div>
+        <div class="border"></div>
+        <div class="item">
+          <span>8.3k</span>
+          Buyers
+        </div>
+        <div class="border"></div>
+        <div class="item">
+          <span>47k</span>
+          Views
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
